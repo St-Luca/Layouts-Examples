@@ -1,0 +1,253 @@
+body {
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    background-image: url("image1.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 67px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 36px;
+    color: #297fb8;
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+#menu {
+    position: fixed;
+    top: 40px;
+    left: 10px;
+    padding: 20px;
+    width: 170px;
+    list-style: none;
+}
+
+.header_li {
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.header_li>a {
+    display: block;
+    background-color: #297fb8;
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.header_li>a:hover {
+    background-color: #999;
+}
+
+.header_li ul li a:hover {
+    background-color: #999;
+    color: black;
+}
+
+#menu .header_li:hover {
+    background-color: #cccccc;
+}
+
+.header_li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header_li ul li:last-child {
+    border-bottom: none;
+}
+
+.header_li ul li a {
+    display: block;
+    padding: 10px;
+    color: #868992;
+    text-decoration: none;
+}
+
+p {
+    color: #297fb8;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(134, 137, 146, 0.5);
+    width: 700px;
+    height: 550px;
+    margin-left: 220px;
+    margin-top: 10px;
+    padding: 10px 10px 10px 20px;
+}
+
+p.pick {
+    color: black;
+    width: 600px;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+legend {
+    color: #868992;
+}
+
+.contact_details {
+    display: flex;
+    flex-wrap: wrap;
+    border-color: red;
+    width: 650px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px 15px 0px 15px;
+}
+
+.contact_details .contact_row {
+    margin-bottom: 15px;
+    margin-left: 30px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_details label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact_details input {
+    margin-top: 5px;
+    width: 170px;
+    border-color: #cccccc;
+}
+
+.person_details {
+    border-color: red;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    width: 650px;
+}
+
+.person_details .person_row {
+    margin-bottom: 15px;
+    margin-left: 30px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+}
+
+.person_row select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000000' width='18px' height='18px'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right center;
+    width: 70px;
+    padding: 1px 1px 1px 4px;
+    margin-top: 5px;
+}
+
+.person_row.gender {
+    width: 100px;
+}
+
+.person_details label {
+    margin-bottom: 10px;
+}
+
+.person_textarea {
+    display: grid;
+    width: 500px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    border-color: #cccccc;
+}
+
+.person_textarea textarea {
+    width: 170px;
+    height: 80px;
+    margin-bottom: 5px;
+}
+
+.person_details input {
+    margin-top: 5px;
+    margin-right: 10px;
+    border-color: #cccccc;
+}
+
+.pick_animal_label {
+    margin-right: 10px;
+    text-align: end;
+    padding: 2px;
+}
+
+.pick_animal.first {
+    margin-left: 30px;
+}
+
+.pick_animal_label.last {
+    margin-right: 30px;
+}
+
+.pick_animal {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #999;
+    border-radius: 3px;
+    background-color: #eeeeee;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.pick_animal:checked::before {
+    content: "\2713";
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.pet_color {
+    display: flex;
+    flex-direction: column;
+    margin-top: -30px;
+}
+
+
+button {
+    background-color: #297fb8;
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 14px;
+    width: 70px;
+    height: 30px;
+    padding: 3px 5px;
+}

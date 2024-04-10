@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Форма</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+    <meta name="description" content="This is a site for form for the zoo keepers">
+    <meta name="keywords" content="form, zoo">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"></div>
+        <h2>Zoo Keeper Application</h2>
+    </header>
+
+    <ul id="menu">
+        <li class="header_li">
+            <a href="#" class="header_li_a">Products</a>
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+        </li>
+        <li class="header_li">
+            <a href="#">Reports</a>
+            <ul>
+                <li><a href="#">Assigned Issues</a></li>
+                <li><a href="#">Summary View</a></li>
+            </ul>
+        </li>
+        <li class="header_li">
+            <a href="#">Info</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <form>
+        <p>Please complete the form.</p>
+
+        <fieldset class="contact_details">
+            <legend>Contact Details</legend>
+
+            <label for="name" class="contact_row">Name
+                <input type="text" name="name" placeholder="Иван Топорышкин">
+            </label>
+            <label for="telephone" class="contact_row">Telephone
+                <input type="tel" name="telephone" placeholder="89955566893">
+            </label>
+            <label for="email" class="contact_row">Email
+                <input type="email" name="email" placeholder="smbody@mail.ru">
+            </label>
+            <label for="site" class="contact_row">Web site
+                <input type="text" name="site" placeholder="www.site.ru">
+            </label>
+
+
+        </fieldset>
+
+        <fieldset class="person_details">
+            <legend>Person Details</legend>
+
+            <label for="name" class="person_row">Birthday
+                <input type="text" name="date" placeholder="11.11.2000" pattern="\d{2}-\d{2}-\d{4}">
+
+            </label>
+
+            <label for="gender" class="person_row gender">Gender
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </label>
+
+            <label for="reg_date" class="person_row">Registration date
+                <input type="text" name="reg_date" placeholder="02-06-2016" pattern="\d{2}-\d{2}-\d{4}">
+            </label>
+
+            <label for="free_text" class="person_textarea">When did you first know you wanted to be a zoo-keeper?
+                <textarea name="free_text"></textarea>
+            </label>
+
+            <p class="pick">Pick Your Favorite Animals</p>
+            <input type="checkbox" name="dog" class="pick_animal first">
+            <label for="dog" class="pick_animal_label">Dog</label>
+
+            <input type="checkbox" name="cat" class="pick_animal">
+            <label for="cat" class="pick_animal_label">Cat</label>
+
+            <input type="checkbox" name="turtle" class="pick_animal">
+            <label for="turtle" class="pick_animal_label">Turtle</label>
+
+            <input type="checkbox" name="fish" class="pick_animal">
+            <label for="fish" class="pick_animal_label">Fish</label>
+
+            <input type="checkbox" name="parrot" class="pick_animal">
+            <label for="parrot" class="pick_animal_label">Parrot</label>
+
+            <input type="checkbox" name="canary" class="pick_animal">
+            <label for="canary" class="pick_animal_label last">Canary</label>
+
+            <label for="petColor" class="pet_color">Color of Pet
+                <input type="color" name="petColor">
+            </label>
+        </fieldset>
+
+        <button class="submit_button">Submit</button>
+        <button class="reset_button">Reset</button>
+    </form>
+</body>
+
+</html>
